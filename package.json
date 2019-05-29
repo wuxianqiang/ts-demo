@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint . --ext .ts",
-    "eslint:fix": "eslint . --ext .ts --fix"
+    "eslint:fix": "eslint . --ext .ts --fix",
+    "test": "mocha"
   },
-  "pre-commit": ["eslint"],
+  "pre-commit": [
+    "eslint"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,5 +20,15 @@
     "eslint": "^5.16.0",
     "pre-commit": "^1.2.2",
     "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.0.3",
+    "@types/sinon": "^7.0.12",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2",
+    "ts-node": "^8.2.0"
   }
 }

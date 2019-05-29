@@ -15,3 +15,14 @@ pre-commit
 ```
 package.json增加一条规则
 > "pre-commit": ["eslint"]
+
+# Mocha 单元测试
+安装开发依赖
+```
+mocha
+@types/mocha
+chai
+@types/chai
+ts-node
+@types/node
+```
